@@ -1,0 +1,58 @@
+body {
+  background-color: white;
+  width: 50%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.main_content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+
+.datatable {
+  width: 400px;
+}
+
+table {
+  border: 1px solid black;
+  width: 100%;
+}
+
+.bordered-table td {
+  border: none;
+  padding: 8px;
+}
+
+.bordered-table tr:nth-child(even) {
+  background-color: rgb(112, 97, 97);
+}
+
+.formControl {
+  display: grid;
+  width: 300px;
+  grid-template-rows: 1fr 2fr;
+}
+
+input {
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.btnSubmit {
+  width: 100px;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 2px;
+  border-right: 3px;
+  border-color: hsla(0, 0%, 0%, 0.668);
+  color: black;
+  border: none;
+  font-size: 17px;
+  float: right;
+  box-shadow: 0 2px 4px rgba(19, 18, 18, 0.4);
+}
