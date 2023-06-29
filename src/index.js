@@ -15,5 +15,6 @@ formValue.addEventListener('submit', async (event) => {
 
   formValue.reset();
   await setScore(userName, userScore);
+  DispalyLeaderData();
 });
 window.onload = DispalyLeaderData();

@@ -4,11 +4,13 @@ body {
 }
 
 h1 {
-  text-align: center;
+  text-align: start;
+  margin: 20px;
 }
 
 .main_content {
   display: grid;
+  margin: 30px;
   grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
 }
