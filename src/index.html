@@ -11,42 +11,17 @@
       <h1>Leaderboard</h1>
       <div class="main_content">
         <div class="datatable">
-          <h1>Recent textScore<button class="btnSubmit">Refresh</button></h1>
-          <table class="bordered-table">
-            <tr>
-              <td>Name:</td>
-              <td>100</td>
-            </tr>
-            <tr>
-              <td>Name:</td>
-              <td>20</td>
-            </tr>
-            <tr>
-              <td>Name:</td>
-              <td>50</td>
-            </tr>
-            <tr>
-              <td>Name:</td>
-              <td>78</td>
-            </tr>
-            <tr>
-              <td>Name:</td>
-              <td>125</td>
-            </tr>
-            <tr>
-              <td>Name:</td>
-              <td>77</td>
-            </tr>
-            <tr>
-              <td>Name:</td>
-              <td>42</td>
-            </tr>
-          </table>
+          <h1>
+            Recent textScore<button class="btnSubmit" id="btnSubmit">
+              Refresh
+            </button>
+          </h1>
+          <table class="bordered-table"></table>
         </div>
         <div class="formControl">
           <h1 class="formtitle">Add your Score</h1>
           <form action="" class="leaderBoardForm" method="post">
-            <input type="text" class="textname" placeholder="Your name" />
+            <input type="text" class="userName" placeholder="Your name" />
             <input type="number" class="textScore" placeholder="Your Score" />
             <input type="submit" value="Submit" class="btnSubmit" />
           </form>

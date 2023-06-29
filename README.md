@@ -124,15 +124,15 @@ npx stylelint "**/*.{css,scss}"
 `
 npx eslint .
 `
-- To build, run the following:
-```
-npm run build
-```
+- Install all dependencies
+```npm install```
+
+
 ### webpack development server
 
  Run the following:
  ```
- npm start
+ npm run start
  ```
 
 
