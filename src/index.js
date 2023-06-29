@@ -2,7 +2,7 @@ import './Style/style.css';
 import setScore from './module/Setdata.js';
 import DispalyLeaderData from './module/DispalyLeaderGame.js';
 
-DispalyLeaderData();
+// DispalyLeaderData();
 const refBtn = document.querySelector('.btnSubmit');
 const formValue = document.querySelector('form');
 refBtn.addEventListener('click', async () => {
