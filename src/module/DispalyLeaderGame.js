@@ -1,20 +1,14 @@
-import { fetchData } from "./get_setdata.js";
+import fetchData from './fetchdata.js';
 
-const tabledata = document.querySelector(".bordered-table");
-let getScore = [];
+const tabledata = document.querySelector('.bordered-table');
 const DispalyLeaderData = async () => {
-  try {
-    getScore = await fetchData();
-  } catch (error) {
-    console.log(error);
-    return;
-  }
-  tabledata.innerHTML = "";
+  const getScore = await fetchData();
+  tabledata.innerHTML = '';
   const rows = getScore.map(({ user, score }) => {
-    const scoreRow = document.createElement("tr");
-    const scoreName = document.createElement("td");
+    const scoreRow = document.createElement('tr');
+    const scoreName = document.createElement('td');
     scoreName.textContent = `${user}:`;
-    const scoreValue = document.createElement("td");
+    const scoreValue = document.createElement('td');
     scoreValue.textContent = `${score}:`;
     scoreRow.appendChild(scoreName);
     scoreRow.appendChild(scoreValue);
